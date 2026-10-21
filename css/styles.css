@@ -112,7 +112,9 @@ footer p {
     transform: scale(1.05);
 }
 
-/* Estilos de la página historia.html */
+/* ------------------------------------------
+   ESTILOS ESPECÍFICOS: PÁGINA HISTORIA
+   ------------------------------------------ */
 body.pagina-historia {
     font-family: Georgia, 'Times New Roman', serif;
     background: linear-gradient(135deg, #f5efe1, #e8dcc5);
@@ -128,23 +130,35 @@ body.pagina-historia {
     background-color: #fffaf0;
     width: 90%;
     max-width: 800px;
-    padding: 50px;
+    padding: 40px;
     text-align: center;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     border: 2px solid #8c3044;
 }
 
-.contenedor h1 {
-    font-size: 36px;
-    color: #8c3044;
+/* Caja de encabezado oscura */
+.contenedor header {
+    background-color: #6b1e2e;
+    padding: 30px 20px;
+    border-radius: 12px;
     margin-bottom: 25px;
+}
+
+/* Texto blanco de alto contraste para resolver la ilegibilidad */
+.contenedor header h1,
+.contenedor h1 {
+    font-size: 32px;
+    color: #ffffff !important;
+    line-height: 1.3;
+    margin-bottom: 0;
 }
 
 .contenedor p {
     font-size: 20px;
     line-height: 1.6;
     margin-bottom: 30px;
+    color: #6d4726;
 }
 
 .contenedor a {
@@ -164,7 +178,9 @@ body.pagina-historia {
     transform: scale(1.05);
 }
 
-/* Estilos de la página lineadetiempo.html */
+/* ------------------------------------------
+   ESTILOS ESPECÍFICOS: LÍNEA DE TIEMPO
+   ------------------------------------------ */
 body.pagina-linea {
     display: flex;
     flex-direction: column;
@@ -266,15 +282,16 @@ body.pagina-linea footer {
 
 @media (max-width: 600px) {
     .contenedor {
-        padding: 30px 20px;
+        padding: 25px 15px;
     }
 
+    .contenedor header h1,
     .contenedor h1 {
-        font-size: 27px;
+        font-size: 24px;
     }
 
     .contenedor p {
-        font-size: 17px;
+        font-size: 16px;
     }
 }
 
