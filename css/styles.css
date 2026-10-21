@@ -125,16 +125,26 @@ body.pagina-historia {
     border: 2px solid #8c3044;
 }
 
-.contenedor h1 {
-    font-size: 36px;
-    color: #161313;
+
+.contenedor header {
+    background-color: #8c3044;
+    padding: 30px 20px;
+    border-radius: 12px;
     margin-bottom: 25px;
+}
+
+.contenedor h1 {
+    font-size: 32px;
+    color: #ffffff; 
+    margin-bottom: 0;
+    line-height: 1.3;
 }
 
 .contenedor p {
     font-size: 20px;
     line-height: 1.6;
     margin-bottom: 30px;
+    color: #6d4726;
 }
 
 .contenedor a {
@@ -150,7 +160,7 @@ body.pagina-historia {
 }
 
 .contenedor a:hover {
-    background-color: #8c3044;
+    background-color: #6b1e2e;
     transform: scale(1.05);
 }
 
@@ -235,7 +245,7 @@ body.pagina-linea footer {
     }
 
     .contenedor h1 {
-        font-size: 27px;
+        font-size: 25px;
     }
 
     .contenedor p {
