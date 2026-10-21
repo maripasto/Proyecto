@@ -1,5 +1,5 @@
 /* ==========================================
-   RESET GENERAL Y MODELO DE CAJAS
+   1. RESET GENERAL Y MODELO DE CAJAS
    ========================================== */
 * {
     margin: 0;
@@ -14,7 +14,7 @@ body {
 }
 
 /* ==========================================
-   SELECTORES DE ETIQUETA (header, footer, h1, h2, p, a)
+   2. SELECTORES DE ETIQUETA (header, footer, h1, h2, p, a)
    ========================================== */
 header {
     background-color: #6b1e2e;
@@ -26,16 +26,19 @@ header {
 header h1 {
     font-size: 36px;
     margin-bottom: 10px;
+    color: #ffffff;
 }
 
 header h2 {
     font-size: 42px;
     margin-bottom: 10px;
     font-weight: bold;
+    color: #ffffff;
 }
 
 header p {
     font-size: 20px;
+    color: #ffffff;
 }
 
 footer {
@@ -48,10 +51,11 @@ footer {
 
 footer p {
     font-size: 14px;
+    color: #ffffff;
 }
 
 /* ==========================================
-   SELECTORES DE CLASE (.clase)
+   3. SELECTORES DE CLASE (.clase)
    ========================================== */
 .principal {
     max-width: 1000px;
@@ -137,21 +141,24 @@ body.pagina-historia {
     border: 2px solid #8c3044;
 }
 
-/* Caja de encabezado oscura */
+/* Caja del título superior con fondo bordó */
 .contenedor header {
-    background-color: #6b1e2e;
+    background-color: #6b1e2e !important;
     padding: 30px 20px;
     border-radius: 12px;
     margin-bottom: 25px;
 }
 
-/* Texto blanco de alto contraste para resolver la ilegibilidad */
+/* FORZADO DE TEXTO BLANCO PARA LEER EL TÍTULO SIN PROBLEMAS DE CONTRASTE */
 .contenedor header h1,
-.contenedor h1 {
-    font-size: 32px;
+.contenedor h1,
+#tarjeta-historia header h1,
+#tarjeta-historia h1 {
+    font-size: 32px !important;
     color: #ffffff !important;
-    line-height: 1.3;
-    margin-bottom: 0;
+    line-height: 1.3 !important;
+    margin-bottom: 0 !important;
+    font-weight: bold;
 }
 
 .contenedor p {
@@ -164,7 +171,7 @@ body.pagina-historia {
 .contenedor a {
     display: inline-block;
     background-color: #8c3044;
-    color: #ffffff;
+    color: #ffffff !important;
     text-decoration: none;
     padding: 14px 28px;
     border-radius: 10px;
@@ -239,7 +246,7 @@ body.pagina-linea footer {
 }
 
 /* ==========================================
-   SELECTORES DE ID (#id)
+   4. SELECTORES DE ID (#id)
    ========================================== */
 #encabezado-principal {
     border-bottom: 5px solid #8c3044;
@@ -262,7 +269,7 @@ body.pagina-linea footer {
 }
 
 /* ==========================================
-   MEDIA QUERIES (DISEÑO RESPONSIVO)
+   5. MEDIA QUERIES (DISEÑO RESPONSIVO)
    ========================================== */
 @media (max-width: 700px) {
     .presentacion {
@@ -287,14 +294,13 @@ body.pagina-linea footer {
 
     .contenedor header h1,
     .contenedor h1 {
-        font-size: 24px;
+        font-size: 24px !important;
     }
 
     .contenedor p {
         font-size: 16px;
     }
 }
-
     .contenedor p {
         font-size: 17px;
     }
