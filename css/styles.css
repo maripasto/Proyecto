@@ -1,6 +1,4 @@
-/* ==========================================
-   1. RESET GENERAL Y MODELO DE CAJAS
-   ========================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,9 +11,7 @@ body {
     color: #333333;
 }
 
-/* ==========================================
-   2. SELECTORES DE ETIQUETA (header, footer, h1, h2, p, a)
-   ========================================== */
+
 header {
     background-color: #6b1e2e;
     color: #ffffff;
@@ -54,9 +50,7 @@ footer p {
     color: #ffffff;
 }
 
-/* ==========================================
-   3. SELECTORES DE CLASE (.clase)
-   ========================================== */
+
 .principal {
     max-width: 1000px;
     margin: 40px auto;
@@ -116,9 +110,7 @@ footer p {
     transform: scale(1.05);
 }
 
-/* ------------------------------------------
-   ESTILOS ESPECÍFICOS: PÁGINA HISTORIA
-   ------------------------------------------ */
+
 body.pagina-historia {
     font-family: Georgia, 'Times New Roman', serif;
     background: linear-gradient(135deg, #f5efe1, #e8dcc5);
@@ -141,23 +133,23 @@ body.pagina-historia {
     border: 2px solid #8c3044;
 }
 
-/* Caja del título superior con fondo bordó */
+
 .contenedor header {
-    background-color: #6b1e2e !important;
+    background-color: #6b1e2e ;
     padding: 30px 20px;
     border-radius: 12px;
     margin-bottom: 25px;
 }
 
-/* FORZADO DE TEXTO BLANCO PARA LEER EL TÍTULO SIN PROBLEMAS DE CONTRASTE */
+
 .contenedor header h1,
 .contenedor h1,
 #tarjeta-historia header h1,
 #tarjeta-historia h1 {
-    font-size: 32px !important;
-    color: #ffffff !important;
-    line-height: 1.3 !important;
-    margin-bottom: 0 !important;
+    font-size: 32px ;
+    color: #ffffff ;
+    line-height: 1.3 ;
+    margin-bottom: 0 ;
     font-weight: bold;
 }
 
@@ -171,7 +163,7 @@ body.pagina-historia {
 .contenedor a {
     display: inline-block;
     background-color: #8c3044;
-    color: #ffffff !important;
+    color: #ffffff ;
     text-decoration: none;
     padding: 14px 28px;
     border-radius: 10px;
@@ -185,9 +177,7 @@ body.pagina-historia {
     transform: scale(1.05);
 }
 
-/* ------------------------------------------
-   ESTILOS ESPECÍFICOS: LÍNEA DE TIEMPO
-   ------------------------------------------ */
+
 body.pagina-linea {
     display: flex;
     flex-direction: column;
@@ -245,9 +235,7 @@ body.pagina-linea footer {
     transform: scale(1.05);
 }
 
-/* ==========================================
-   4. SELECTORES DE ID (#id)
-   ========================================== */
+
 #encabezado-principal {
     border-bottom: 5px solid #8c3044;
 }
@@ -268,9 +256,7 @@ body.pagina-linea footer {
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* ==========================================
-   5. MEDIA QUERIES (DISEÑO RESPONSIVO)
-   ========================================== */
+
 @media (max-width: 700px) {
     .presentacion {
         flex-direction: column;
@@ -294,7 +280,7 @@ body.pagina-linea footer {
 
     .contenedor header h1,
     .contenedor h1 {
-        font-size: 24px !important;
+        font-size: 24px ;
     }
 
     .contenedor p {
@@ -304,4 +290,19 @@ body.pagina-linea footer {
     .contenedor p {
         font-size: 17px;
     }
+
+
+.boton-trivia {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #24527a;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    margin: 20px;
+}
+
+.boton-trivia:hover {
+    background-color: #183b59;
 }
