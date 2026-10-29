@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia: San Faustino Míguez</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Trivia: San Faustino Míguez de la Encarnación</h1>
+        
+        <div class="pregunta">
+            <label class="titulo-pregunta">1. ¿En qué año nació?</label>
+            <div class="opciones">
+                <label><input type="radio" name="q1" id="q1a"> A) 1820</label>
+                <label><input type="radio" name="q1" id="q1b"> B) 1831</label>
+                <label><input type="radio" name="q1" id="q1c"> C) 1845</label>
+            </div>
+            <span id="res1" class="feedback"></span>
+        </div>
+
+        <div class="pregunta">
+            <label class="titulo-pregunta">2. ¿A qué orden religiosa pertenecía?</label>
+            <div class="opciones">
+                <label><input type="radio" name="q2" id="q2a"> A) A los escolapios</label>
+                <label><input type="radio" name="q2" id="q2b"> B) A los franciscanos</label>
+                <label><input type="radio" name="q2" id="q2c"> C) A los jesuitas</label>
+            </div>
+            <span id="res2" class="feedback"></span>
+        </div>
+
+        <div class="pregunta">
+            <label class="titulo-pregunta">3. ¿Qué congregación fundó?</label>
+            <div class="opciones">
+                <label><input type="radio" name="q3" id="q3a"> A) Las Hijas de María</label>
+                <label><input type="radio" name="q3" id="q3b"> B) Las Hijas de la Divina Pastora</label>
+                <label><input type="radio" name="q3" id="q3c"> C) Las Hermanas del Sagrado Corazón</label>
+            </div>
+            <span id="res3" class="feedback"></span>
+        </div>
+
+        <div class="pregunta">
+            <label class="titulo-pregunta">4. ¿En qué campo científico se destacó, además de dedicarse a la educación?</label>
+            <div class="opciones">
+                <label><input type="radio" name="q4" id="q4a"> A) La astronomía</label>
+                <label><input type="radio" name="q4" id="q4b"> B) La botánica y las propiedades medicinales de las plantas</label>
+                <label><input type="radio" name="q4" id="q4c"> C) La geología</label>
+            </div>
+            <span id="res4" class="feedback"></span>
+        </div>
+
+        <div class="pregunta">
+            <label class="titulo-pregunta">5. ¿En qué año fue canonizado por el papa Francisco?</label>
+            <div class="opciones">
+                <label><input type="radio" name="q5" id="q5a"> A) 1998</label>
+                <label><input type="radio" name="q5" id="q5b"> B) 2010</label>
+                <label><input type="radio" name="q5" id="q5c"> C) 2017</label>
+            </div>
+            <span id="res5" class="feedback"></span>
+        </div>
+
+        <div class="pregunta">
+            <label class="titulo-pregunta">6. ¿Cuál era el nombre de nacimiento de San Faustino Míguez?</label>
+            <div class="opciones">
+                <label><input type="radio" name="q6" id="q6a"> A) Manuel Míguez González</label>
+                <label><input type="radio" name="q6" id="q6b"> B) José Faustino Pérez</label>
+                <label><input type="radio" name="q6" id="q6c"> C) Francisco Míguez López</label>
+            </div>
+            <span id="res6" class="feedback"></span>
+        </div>
+
+        <div class="pregunta">
+            <label class="titulo-pregunta">7. ¿En qué país nació?</label>
+            <div class="opciones">
+                <label><input type="radio" name="q7" id="q7a"> A) Italia</label>
+                <label><input type="radio" name="q7" id="q7b"> B) España</label>
+                <label><input type="radio" name="q7" id="q7c"> C) Portugal</label>
+            </div>
+            <span id="res7" class="feedback"></span>
+        </div>
+
+        <div class="pregunta">
+            <label class="titulo-pregunta">8. ¿En qué año fue ordenado sacerdote?</label>
+            <div class="opciones">
+                <label><input type="radio" name="q8" id="q8a"> A) 1850</label>
+                <label><input type="radio" name="q8" id="q8b"> B) 1853</label>
+                <label><input type="radio" name="q8" id="q8c"> C) 1856</label>
+            </div>
+            <span id="res8" class="feedback"></span>
+        </div>
+
+        <div class="pregunta">
+            <label class="titulo-pregunta">9. ¿A qué país viajó para desarrollar su labor educativa?</label>
+            <div class="opciones">
+                <label><input type="radio" name="q9" id="q9a"> A) Cuba</label>
+                <label><input type="radio" name="q9" id="q9b"> B) Argentina</label>
+                <label><input type="radio" name="q9" id="q9c"> C) México</label>
+            </div>
+            <span id="res9" class="feedback"></span>
+        </div>
+
+        <div class="pregunta">
+            <label class="titulo-pregunta">10. ¿Qué quería promover San Faustino mediante la educación?</label>
+            <div class="opciones">
+                <label><input type="radio" name="q10" id="q10a"> A) Solamente el aprendizaje de ciencias</label>
+                <label><input type="radio" name="q10" id="q10b"> B) La formación integral de las personas</label>
+                <label><input type="radio" name="q10" id="q10c"> C) Únicamente la formación religiosa</label>
+            </div>
+            <span id="res10" class="feedback"></span>
+        </div>
+
+        <button id="btnEvaluar">Evaluar Respuestas</button>
+        <h2 id="resultadoFinal"></h2>
+    </div>
+      <div style="margin-top: 25px; text-align: center;">
+            <a href="../index.html" class="volver"><i class="bi bi-arrow-left"></i> Volver al inicio</a>
+     </div>
+    <script src="../javascript/javascript.js"></script>
+</body>
+</html>
