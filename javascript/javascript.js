@@ -1,6 +1,9 @@
+
 const boton = document.getElementById("btnEvaluar");
+const reiniciar = document.getElementById("btnReiniciar");
 
 boton.addEventListener("click", function() {
+
     let puntaje = 0;
 
     // Pregunta 1
@@ -115,5 +118,31 @@ boton.addEventListener("click", function() {
 
     // Resultado final
     let resultadoFinal = document.getElementById("resultadoFinal");
+
     resultadoFinal.innerHTML = "Obtuviste " + puntaje + " de 10 respuestas correctas.";
+
+});
+
+
+// BOTÓN REINICIAR
+reiniciar.addEventListener("click", function() {
+
+    // Desmarcar todas las respuestas
+    let opciones = document.querySelectorAll('input[type="radio"]');
+
+    for (let opcion of opciones) {
+        opcion.checked = false;
+    }
+
+    // Borrar los mensajes de cada pregunta
+    for (let i = 1; i <= 10; i++) {
+        let respuesta = document.getElementById("res" + i);
+
+        respuesta.innerHTML = "";
+        respuesta.style.color = "";
+    }
+
+    // Borrar resultado final
+    document.getElementById("resultadoFinal").innerHTML = "";
+
 });
